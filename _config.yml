@@ -1,0 +1,31 @@
+# Dependencies
+markdown:         rdiscount
+highlighter:      pygments
+
+#
+encoding:         "utf-8"
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            UnityTech
+tagline:          'Learn Unity Together'
+description:      'This is where I keep my blogs'
+url:              http://unitytech.cc
+
+author:
+  name:           'tnqiang'
+  url:            https://github.com/renshengqiang
+
+gems: [jekyll-paginate]
+paginate:         5
+paginate_path: "page:num"
+
+# Custom vars
+version:          1.0.0
+
+# duoshuo
+comments :
+    provider : duoshuo
+    duoshuo :
+      short_name : tnqiang
