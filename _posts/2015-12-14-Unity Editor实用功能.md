@@ -139,3 +139,6 @@ public class DependenciesBy : AssetPostprocessor
 }
 
 {% endhighlight %}
+
+##Refs:
+1. [Unity Editor Manual](http://docs.unity3d.com/ScriptReference/Editor.html)
