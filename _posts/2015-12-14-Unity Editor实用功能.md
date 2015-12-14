@@ -1,10 +1,11 @@
 ﻿---
 layout: post
 author: tnqiang
-titile: Unity Editor 使用功能
+titile: Unity Editor 实用功能
 category: Unity
-tag: iOS
+tag: Unity
 ---
+
 不懂得偷懒的程序员不是好程序员  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; --某某优秀程序员
 
@@ -15,7 +16,7 @@ tag: iOS
 
 ##自定义菜单
 使用 MenuItem 标签即可，例子如下。
-{% highlight C# %}
+```
 public class AssetBundleEditor
 {
     [MenuItem("Assets/Build AssetBundle From Selection - Track dependencies")]
@@ -31,6 +32,7 @@ public class AssetBundleEditor
         }
     }
 }
+```
 
 ##自定义 Component 面板
 
@@ -39,7 +41,7 @@ public class AssetBundleEditor
 3. 在 OnInspectorGUI 中进行自定义的绘制；
 4. 将需要自定义Component 的组件设置为 private 或者设置 hideinhirarchy。
 
-{% highlight C# %}
+```
 [CustomEditor(typeof(SceneSharedComponent))]
 public class SceneSharedComponentEditor : Editor
 {
@@ -70,6 +72,7 @@ public class SceneSharedComponentEditor : Editor
         }
     }
 }
+```
 
 ##自定义窗口
 
@@ -77,7 +80,7 @@ public class SceneSharedComponentEditor : Editor
 2. 使用 EditorWindow.GetWindow 进行显示；
 3. 在 OnGUI 中进行 UI 处理。
 
-{% highlight C# %}
+```
 public class NewExtendBehaviorWindow : EditorWindow
 {
 	private string path;
@@ -110,13 +113,14 @@ public class NewExtendBehaviorWindow : EditorWindow
 		AssetDatabase.Refresh ();
 	}
 }
+```
 
 ##资源导入处理
 
 1. 继承自 AssetPostprocessor；
 2. 重写 OnPostprocessAllAssets；
 
-{% highlight C# %}
+```
 public class DependenciesBy : AssetPostprocessor
 {    
 	private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets,
@@ -133,3 +137,4 @@ public class DependenciesBy : AssetPostprocessor
 		}
 	}
 }
+```
