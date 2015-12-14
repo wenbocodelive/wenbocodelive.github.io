@@ -1,5 +1,4 @@
-Unity Editor实用功能
-不懂得偷懒的程序员不是好程序员  
+﻿不懂得偷懒的程序员不是好程序员  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; --某某优秀程序员
 
 写editor代码的目的：
