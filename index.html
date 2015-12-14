@@ -17,9 +17,9 @@ title: Home
       </h1>
         <p class="post-info">
         {% if post.author == "tnqiang" %}
-          {{ post.author }}原创
+          {{ post.author }} 原创
         {% else %}
-          转载{{ post.author }}
+          By {{ post.author }}
         {% endif %}
         </p>
         <span class="post-info"><i class="fa fa-calendar"></i>&nbsp{{ post.date | date: "%Y" }}/{{ post.date | date: "%m" }}/{{ post.date | date: "%d" }}  </span>
