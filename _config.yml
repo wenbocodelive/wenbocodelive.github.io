@@ -8,14 +8,14 @@ encoding:         "utf-8"
 permalink:        pretty
 
 # Setup
-title:            UnityTech
-tagline:          'Learn Unity Together'
+title:            bobolive's code live
+tagline:          'Coding Game'
 description:      'This is where I keep my blogs'
-url:              http://unitytech.cc
+url:              ttp://wenbocodelive.github.io/
 
 author:
-  name:           'tnqiang'
-  url:            https://github.com/renshengqiang
+  name:           'wenbo'
+  url:            https://github.com/wenbocodelive
 
 gems: [jekyll-paginate]
 paginate:         5
